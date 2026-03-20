@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/res">
+        <file>resimler/0.png</file>
+        <file>resimler/1.png</file>
+        <file>resimler/2.png</file>
+        <file>resimler/3.png</file>
+        <file>resimler/4.png</file>
+    </qresource>
+</RCC>
