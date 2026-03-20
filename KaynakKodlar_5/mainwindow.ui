@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="acceptDrops">
+   <bool>true</bool>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QTextEdit" name="textEdit">
+      <property name="acceptDrops">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuDosya">
+    <property name="title">
+     <string>D&amp;osya</string>
+    </property>
+    <addaction name="action_A"/>
+    <addaction name="action_Kaydet"/>
+    <addaction name="action_Farkl_Kaydet"/>
+    <addaction name="separator"/>
+    <addaction name="action_leri"/>
+    <addaction name="action_Geri"/>
+   </widget>
+   <addaction name="menuDosya"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_A"/>
+   <addaction name="action_Kaydet"/>
+   <addaction name="action_Farkl_Kaydet"/>
+   <addaction name="separator"/>
+   <addaction name="action_leri"/>
+   <addaction name="action_Geri"/>
+  </widget>
+  <action name="actionBu_alt_menu">
+   <property name="text">
+    <string>Bu alt menu</string>
+   </property>
+  </action>
+  <action name="action_A">
+   <property name="icon">
+    <iconset resource="resimler.qrc">
+     <normaloff>:/res/images/Ac.png</normaloff>:/res/images/Ac.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Aç</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="action_Kaydet">
+   <property name="icon">
+    <iconset resource="resimler.qrc">
+     <normaloff>:/res/images/Kaydet.jpg</normaloff>:/res/images/Kaydet.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Kaydet</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="action_Farkl_Kaydet">
+   <property name="icon">
+    <iconset resource="resimler.qrc">
+     <normaloff>:/res/images/farkliKaydet.jpg</normaloff>:/res/images/farkliKaydet.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Farklı Kaydet</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+S</string>
+   </property>
+  </action>
+  <action name="action_leri">
+   <property name="icon">
+    <iconset resource="resimler.qrc">
+     <normaloff>:/res/images/ileri.png</normaloff>:/res/images/ileri.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;İleri</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+Z</string>
+   </property>
+  </action>
+  <action name="action_Geri">
+   <property name="icon">
+    <iconset resource="resimler.qrc">
+     <normaloff>:/res/images/geri.png</normaloff>:/res/images/geri.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Geri</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Z</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="resimler.qrc"/>
+ </resources>
+ <connections/>
+</ui>
